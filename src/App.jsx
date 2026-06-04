@@ -5,7 +5,7 @@ function App() {
     <>
       {/* NAVBAR */}
       <nav>
-        <div className="logo">NovaWeb</div>
+        <div className="logo">LosAlans</div>
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#servicios">Servicios</a></li>
