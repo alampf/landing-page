@@ -5,12 +5,13 @@ function App() {
     <>
       {/* NAVBAR */}
       <nav>
-        <div className="logo">LosAlans</div>
+        <div className="logo">RESTAURANTE </div>
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#menu">menu</a></li>
         </ul>
       </nav>
 
