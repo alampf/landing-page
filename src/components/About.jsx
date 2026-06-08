@@ -12,6 +12,8 @@ function About() {
       <p>
         Nuestro equipo trabaja constantemente para brindar experiencias
         modernas, eficientes y enfocadas en las necesidades de cada usuario.
+
+        cara de vr
       </p>
     </section>
   );
