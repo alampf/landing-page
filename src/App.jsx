@@ -36,7 +36,7 @@ function App() {
       {/* CONTACTO */}
       <section id="contacto">
         <h2>Contacto</h2>
-        <p>Email: contacto@novaweb.com</p>
+        <p>Email: contacto@software.com</p>
       </section>
     </>
   )
