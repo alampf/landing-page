@@ -15,7 +15,6 @@ function App() {
       {/* Contenido */}
       <main>
         <Portfolio />
-        <Contact />
         <About />
         <Contact />
       </main>
