@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Contact from './pages/contact';
 import Portfolio from './pages/portafolio';
-import home from './pages/home';
+import Home from './pages/home';
 import About from './components/About';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       {/* Navbar */}
       <Navbar />
       <About />
-      <home />
+      <Home />
       {/* Contenido */}
       <main>
         <Portfolio />
