@@ -1,158 +1,142 @@
-import React from 'react'
-
-export default function Contact() {
+function Contact() {
   return (
-    <section id="contact" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6 lg:px-12">
-        
-        {/* <!-- Encabezado --> */}
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-gray-900">
-                Contáctanos
-            </h2>
-            <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
-                ¿Tienes alguna duda o propuesta? Estamos listos para ayudarte.
-                Envíanos un mensaje y te responderemos lo antes posible.
-            </p>
+    <section
+      id="contact"
+      className="bg-[#0d1117] text-[#c9d1d9] py-20 px-6"
+    >
+      <div className="max-w-6xl mx-auto">
+
+        {/* Encabezado */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-[#58a6ff] mb-4">
+            Contáctanos
+          </h2>
+
+          <p className="text-lg text-[#c9d1d9] max-w-2xl mx-auto">
+            Estamos listos para ayudarte. Envíanos un mensaje y nos
+            pondremos en contacto contigo lo antes posible.
+          </p>
         </div>
 
-        <div class="grid lg:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-10">
 
-            {/* <!-- Información --> */}
-            <div class="bg-white rounded-2xl shadow-lg p-8">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-6">
-                    Información de Contacto
-                </h3>
+          {/* Información */}
+          <div className="bg-[#161b22] p-8 rounded-2xl border border-[#30363d]">
 
-                <div class="space-y-6">
+            <h3 className="text-2xl font-semibold text-[#79c0ff] mb-6">
+              Información de Contacto
+            </h3>
 
-                    <div class="flex items-start gap-4">
-                        <div class="bg-blue-100 p-3 rounded-lg">
-                            📍
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Dirección</h4>
-                            <p class="text-gray-600">
-                                Huamantla, Tlaxcala, México
-                            </p>
-                        </div>
-                    </div>
+            <div className="space-y-6">
 
-                    <div class="flex items-start gap-4">
-                        <div class="bg-green-100 p-3 rounded-lg">
-                            📞
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Teléfono</h4>
-                            <p class="text-gray-600">
-                                +52 247 123 4567
-                            </p>
-                        </div>
-                    </div>
+              <div>
+                <h4 className="font-semibold text-[#58a6ff]">
+                  📍 Dirección
+                </h4>
+                <p className="text-[#c9d1d9]">
+                  Huamantla, Tlaxcala, México
+                </p>
+              </div>
 
-                    <div class="flex items-start gap-4">
-                        <div class="bg-purple-100 p-3 rounded-lg">
-                            ✉️
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Correo</h4>
-                            <p class="text-gray-600">
-                                contacto@empresa.com
-                            </p>
-                        </div>
-                    </div>
+              <div>
+                <h4 className="font-semibold text-[#58a6ff]">
+                  📞 Teléfono
+                </h4>
+                <p className="text-[#c9d1d9]">
+                  +52 247 123 4567
+                </p>
+              </div>
 
-                </div>
-
-                <div class="mt-10">
-                    <h4 class="font-semibold text-gray-800 mb-4">
-                        Síguenos
-                    </h4>
-
-                    <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white hover:scale-110 transition">
-                            F
-                        </a>
-
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-pink-600 text-white hover:scale-110 transition">
-                            I
-                        </a>
-
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white hover:scale-110 transition">
-                            X
-                        </a>
-
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 text-white hover:scale-110 transition">
-                            in
-                        </a>
-                    </div>
-                </div>
+              <div>
+                <h4 className="font-semibold text-[#58a6ff]">
+                  ✉️ Correo
+                </h4>
+                <p className="text-[#c9d1d9]">
+                  contacto@empresa.com
+                </p>
+              </div>
             </div>
 
-            {/* <!-- Formulario --> */}
-            <div class="bg-white rounded-2xl shadow-lg p-8">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-6">
-                    Envíanos un mensaje
-                </h3>
+            {/* Redes */}
+            <div className="mt-10">
+              <h4 className="font-semibold text-[#79c0ff] mb-4">
+                Redes Sociales
+              </h4>
 
-                <form class="space-y-6">
+              <div className="flex gap-4">
+                <a
+                  href="#"
+                  className="w-10 h-10 rounded-full bg-[#21262d] border border-[#30363d] flex items-center justify-center hover:border-[#58a6ff] hover:text-[#58a6ff] transition"
+                >
+                  F
+                </a>
 
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Nombre
-                        </label>
-                        <input
-                            type="text"
-                            placeholder="Tu nombre"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
-                    </div>
+                <a
+                  href="#"
+                  className="w-10 h-10 rounded-full bg-[#21262d] border border-[#30363d] flex items-center justify-center hover:border-[#58a6ff] hover:text-[#58a6ff] transition"
+                >
+                  I
+                </a>
 
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Correo electrónico
-                        </label>
-                        <input
-                            type="email"
-                            placeholder="correo@ejemplo.com"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Asunto
-                        </label>
-                        <input
-                            type="text"
-                            placeholder="Asunto"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Mensaje
-                        </label>
-                        <textarea
-                            rows="5"
-                            placeholder="Escribe tu mensaje..."
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        ></textarea>
-                    </div>
-
-                    <button
-                        type="submit"
-                        class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300"
-                    >
-                        Enviar Mensaje
-                    </button>
-
-                </form>
+                <a
+                  href="#"
+                  className="w-10 h-10 rounded-full bg-[#21262d] border border-[#30363d] flex items-center justify-center hover:border-[#58a6ff] hover:text-[#58a6ff] transition"
+                >
+                  X
+                </a>
+              </div>
             </div>
+
+          </div>
+
+          {/* Formulario */}
+          <div className="bg-[#161b22] p-8 rounded-2xl border border-[#30363d]">
+
+            <h3 className="text-2xl font-semibold text-[#79c0ff] mb-6">
+              Envíanos un Mensaje
+            </h3>
+
+            <form className="space-y-5">
+
+              <input
+                type="text"
+                placeholder="Nombre"
+                className="w-full bg-[#0d1117] border border-[#30363d] rounded-lg px-4 py-3 text-[#c9d1d9] focus:outline-none focus:border-[#58a6ff]"
+              />
+
+              <input
+                type="email"
+                placeholder="Correo Electrónico"
+                className="w-full bg-[#0d1117] border border-[#30363d] rounded-lg px-4 py-3 text-[#c9d1d9] focus:outline-none focus:border-[#58a6ff]"
+              />
+
+              <input
+                type="text"
+                placeholder="Asunto"
+                className="w-full bg-[#0d1117] border border-[#30363d] rounded-lg px-4 py-3 text-[#c9d1d9] focus:outline-none focus:border-[#58a6ff]"
+              />
+
+              <textarea
+                rows="5"
+                placeholder="Escribe tu mensaje..."
+                className="w-full bg-[#0d1117] border border-[#30363d] rounded-lg px-4 py-3 text-[#c9d1d9] focus:outline-none focus:border-[#58a6ff]"
+              ></textarea>
+
+              <button
+                type="submit"
+                className="w-full bg-[#58a6ff] text-[#0d1117] font-semibold py-3 rounded-lg hover:bg-[#79c0ff] transition duration-300"
+              >
+                Enviar Mensaje
+              </button>
+
+            </form>
+          </div>
 
         </div>
-    </div>
-</section>
-  )
+
+      </div>
+    </section>
+  );
 }
+
+export default Contact;
