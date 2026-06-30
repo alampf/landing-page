@@ -29,7 +29,7 @@ export default function Portfolio() {
             Proyectos
           </h2>
           <p className="leading-relaxed text-gray-300">
-            Contenido pendiente...
+            Contenido pendiente.......
           </p>
         </div>
 
