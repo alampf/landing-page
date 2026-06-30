@@ -4,9 +4,15 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/landing-page/',
   plugins: [
     react(),
     tailwindcss(),
   ],
-  base: '/landing-page/',
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname,  './src')
+    }
+  }
+ 
 })
